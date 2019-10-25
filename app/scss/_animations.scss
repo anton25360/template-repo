@@ -1,0 +1,40 @@
+//contains animations + mixins + variables + font face
+
+$titleWidth : 50%; //use for gradient strip
+$primaryColor : rgb(0, 0, 200);
+
+@keyframes title {
+    from{
+      width: 0%;
+    }
+    to{
+      width: $titleWidth;
+    }
+  }
+  
+  @keyframes text {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  // other here /////////////////
+
+  @mixin gradTxt ($col1,$col2) { 
+    background: linear-gradient(to right,$col1,$col2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+   @font-face {
+    font-family: 'product';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }

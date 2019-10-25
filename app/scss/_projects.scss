@@ -1,0 +1,22 @@
+//contains project cards layout & look
+.project { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.project .text h1{ display: inline; }
+.project img{ max-width: 250px; } //for chrome and safari bug
+.project .text { background-color: rgb(233, 233, 233); }
+
+//titles
+.proj1 .text h1{ @include gradTxt(#2F80ED, #56CCF2); }
+.proj2 .text h1{ @include gradTxt(#4776E6, #8E54E9); }
+.proj3 .text h1{ @include gradTxt(#FF5F6D,#FFC371); }
+.proj4 .text h1{ @include gradTxt(#4A00E0, #8E2DE2); }
+.proj5 .text h1{ @include gradTxt(#f80759,#bc4e9c); } 
+
+//code badges
+.badge-html{background-image:linear-gradient(135deg,#ff4c9f,#ff7b74)}
+.badge-css{background-image:linear-gradient(135deg,#4776E6,#8E54E9)}
+.badge-sass{background-image:linear-gradient(135deg,#9733EE,#DA22FF)}
+.badge-js{background-image:linear-gradient(135deg,#F37335,rgb(255, 174, 0))}
+.badge-ts{background-image:linear-gradient(135deg,#2F80ED,#56CCF2)}
+.badge-java{background-image:linear-gradient(135deg,#ED213A,#93291E)}
+.badge-firebase{background-image:linear-gradient(135deg,#FF4B2B,#FF416C)}
+.badge-go{background-image:linear-gradient(135deg,#02AAB0,#00CDAC)}
